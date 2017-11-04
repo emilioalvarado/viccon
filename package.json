@@ -4,8 +4,9 @@
   "description": "viccon app con Nodejs y Express.",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node main.js"
+    "heroku-prebuild": "echo This runs before Heroku installs your dependencies.",
+    "start": "node main.js",
+	"heroku-postbuild": "echo This runs afterwards."
   },
   "author": "MiguelGonzalez, Johanna Marrugo, Emilio Alvarado - UniAndes ",
   "license": "MIT",
