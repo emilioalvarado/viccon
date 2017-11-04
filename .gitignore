@@ -59,8 +59,7 @@ $RECYCLE.BIN/
 /app/**/*.js.map
 
 # dependencies
-/node_modules
-#/bower_components
+#/node_modules
 
 # IDEs and editors
 /.idea
@@ -106,7 +105,6 @@ coverage
 .grunt
 
 # Bower dependency directory (https://bower.io/)
-#bower_components
 
 # node-waf configuration
 .lock-wscript
@@ -115,7 +113,7 @@ coverage
 build/Release
 
 # Dependency directories
-node_modules/
+#node_modules/
 jspm_packages/
 
 # Typescript v1 declaration files
