@@ -4,8 +4,8 @@
   "description": "viccon app con Nodejs y Express.",
   "main": "main.js",
   "scripts": {
-    "start": "main.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
   },
   "author": "MiguelGonzalez, Johanna Marrugo, Emilio Alvarado - UniAndes ",
   "license": "MIT",

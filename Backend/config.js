@@ -1,5 +1,5 @@
 module.exports = {
-    port: process.env.PORT || 80,
+    port: process.env.PORT || 2017,
     db: process.env.MONGODB || 'mongodb://18.216.188.216:27017/viccon',
     MySql_db: 'Viccon',
     MySql_user: 'root',
