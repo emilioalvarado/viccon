@@ -89,9 +89,12 @@ app.post('/crear_concurso', function(req, res){
 // create an incoming form object
   var form = new formidable.IncomingForm();
   form.on('file', function(field, file) {
-    console.log("nombre "+file.name);
-   var fileBuffer = fs.readFileSync(file.path);
- AWS.config.loadFromPath('./Backend/bucket/config.json');
+  console.log("nombre "+file.name);
+  var fileBuffer = fs.readFileSync(file.path);
+ //AWS.config.loadFromPath('./Backend/bucket/config.json');
+  AWS.config.accessKeyId = process.env.accessKeyId;
+  AWS.config.secretAccessKey = process.env.secretAccessKey;
+  AWS.config.region = process.env.region;
 var s3Bucket = new AWS.S3()    
 var data = {Key: "media/thumb/"+file.name, Body: fileBuffer, Bucket: constants.nombreBucket, ACL: 'public-read'};
 s3Bucket.putObject(data, function(err, data){
@@ -113,7 +116,10 @@ app.post('/subir_video', function(req, res){
   var form = new formidable.IncomingForm();
   form.on('file', function(field, file) {
       var fileBuffer = fs.readFileSync(file.path);
-      AWS.config.loadFromPath('./Backend/bucket/config.json');
+      //AWS.config.loadFromPath('./Backend/bucket/config.json');
+	  AWS.config.accessKeyId = process.env.accessKeyId;
+	  AWS.config.secretAccessKey = process.env.secretAccessKey;
+      AWS.config.region = process.env.region;
       var s3Bucket = new AWS.S3()    
       var data = {Key: "media/original/"+file.name, Body: fileBuffer, Bucket: constants.nombreBucket, ACL: 'public-read'};
       s3Bucket.putObject(data, function(err, data){
