@@ -11,6 +11,9 @@ function converter (inputVideo,outputVideo,correo,idVideo,callback) {
 var respuesta="_";
 try {
 //AWS.config.loadFromPath('../bucket/config.json');
+console.log(process.env.accessKeyId);
+console.log(process.env.secretAccessKey);
+console.log(process.env.region);
 AWS.config.accessKeyId = process.env.accessKeyId;
 AWS.config.secretAccessKey = process.env.secretAccessKey;
 AWS.config.region = process.env.region;

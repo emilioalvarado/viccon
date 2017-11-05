@@ -6,7 +6,10 @@ const aws      = require('aws-sdk');
 var amznConf = require('../config.js')
 const queueUrl = amznConf.QueueUrl;
 
-
+console.log('******access key *****');
+console.log(process.env.accessKeyId);
+console.log(process.env.secretAccessKey);
+console.log(process.env.region);
 
 //Método que realiza el envío de mensaje a la cola
 function SQSCrearMensaje(objrequest, objresponse){
