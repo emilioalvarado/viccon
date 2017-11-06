@@ -6,13 +6,13 @@
   "scripts": {
     "heroku-prebuild": "echo This runs before Heroku installs your dependencies.",
     "start": "node main.js",
-	"heroku-postbuild": "echo This runs afterwards."
+    "heroku-postbuild": "echo This runs afterwards."
   },
   "author": "MiguelGonzalez, Johanna Marrugo, Emilio Alvarado - UniAndes ",
   "license": "MIT",
   "dependencies": {
     "angular-local-storage": "^0.7.1",
-   "aws-sdk": "2.x",
+    "aws-sdk": "2.x",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.17.2",
     "cron": "^1.2.1",
@@ -23,6 +23,7 @@
     "jwplayer": "^1.0.3",
     "mongoose": "^4.11.8",
     "mysql2": "^1.4.2",
+    "newrelic": "^2.3.2",
     "node-cron": "^1.2.1",
     "nodemailer": "^4.1.0",
     "path": "^0.12.7",

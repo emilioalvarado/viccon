@@ -1,5 +1,7 @@
 //usar los nuevos tipos de variables y características de EMC6
 'use strict'
+//Monitoreo con NewRelic
+require('newrelic');
 //Referencia a mongoose
 const mongoose = require('mongoose')
 //Se obtiene el puerto desde una variable de entorno o se seta en 3000 si no se indica nda
