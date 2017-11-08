@@ -64,7 +64,7 @@ $scope.items=[];
     
     $scope.filteredItems = [];
     $scope.groupedItems = [];
-    $scope.itemsPerPage = 4;
+    $scope.itemsPerPage = 3;
     $scope.pagedItems = [];
     $scope.currentPage = 0;
   var searchMatch = function (haystack, needle) {
@@ -302,7 +302,7 @@ $scope.items=[];
     
     $scope.filteredItems = [];
     $scope.groupedItems = [];
-    $scope.itemsPerPage = 4;
+    $scope.itemsPerPage = 3;
     $scope.pagedItems = [];
     $scope.currentPage = 0;
   var searchMatch = function (haystack, needle) {
